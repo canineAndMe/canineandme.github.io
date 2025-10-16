@@ -3,443 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Dog Training Services</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-        }
-
-        .nav-links a:hover {
-            opacity: 0.8;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 6rem 2rem;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: white;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #667eea;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .about-image {
-            width: 100%;
-            height: 400px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-        }
-
-        .about-text h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: #764ba2;
-        }
-
-        .about-text p {
-            margin-bottom: 1rem;
-            color: #666;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .service-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #667eea;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .portfolio-item {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .portfolio-item:hover {
-            transform: scale(1.05);
-        }
-
-        .portfolio-image {
-            width: 100%;
-            height: 250px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.1rem;
-        }
-
-        .portfolio-info {
-            padding: 1.5rem;
-        }
-
-        .portfolio-info h3 {
-            margin-bottom: 0.5rem;
-            color: #764ba2;
-        }
-
-        .testimonials {
-            background: #f8f9fa;
-        }
-
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .testimonial-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 1rem;
-            color: #666;
-        }
-
-        .testimonial-author {
-            font-weight: bold;
-            color: #667eea;
-        }
-
-        .contact-content {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            font-size: 1.1rem;
-        }
-
-        .contact-item-icon {
-            font-size: 1.5rem;
-            color: #667eea;
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                gap: 1rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <title>Dog Trainer in Puchong, Malaysia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">🐕 Pro Dog Training</div>
+            <div class="logo"></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#reviews">Our Clients</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="home" class="hero">
-        <h1>Professional Dog Training</h1>
-        <p>Building better bonds between dogs and their owners</p>
-        <a href="#contact" class="btn">Get Started Today</a>
+    <section id="home" class="home">
+        <div class="left">
+            <img src="./images/terrence-with-dash.jpeg" alt="Dog Trainer" />
+        </div>
+        <div class="right">
+            <div class="top">
+                <h2>Hi, I'm Terrence,</h2>
+                <h2>an expert dog trainer &</h2>
+                <h2>holistic wellness specialist.</h2>
+                <h2>Puchong, Malaysia.</h2>
+            </div>
+            <div class="bottom">
+                <a href="#contact" class="contact-btn">
+                    Contact Me
+                </a>
+            </div>
+        </div>
     </section>
-
-    <section id="about">
+    <section id="about" class="about-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">A Little Bit About Me</h2>
             <div class="about-content">
-                <div class="about-image">
-                    Your Photo Here<br>
-                    (Replace with actual image)
+                <p>I've been working with dogs professionally for more than 15 years, helping hundreds of owners build stronger relationships with their furry companions. My passion for dogs started at a young age, and I've dedicated my career to understanding canine behavior, training, and holistic wellness.</p>
+                
+                <p>I believe every dog has the potential to be well-behaved and happy. My approach combines professional training expertise with holistic wellness, focusing on positive reinforcement, nutrition, and understanding each dog's unique personality and energy.</p>
+
+                <!-- Credentials Section -->
+                <div class="credentials-section">
+                    <h3>Certifications & Experience</h3>
+                    <div class="credentials-grid">
+                        <div class="credential-item">
+                            <div class="icon">🎖️</div>
+                            <div class="title">USA North State Certified Police Canine Instructor</div>
+                            <div class="year">2014</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="icon">🏆</div>
+                            <div class="title">MKA Dog Show Handling Experience</div>
+                            <div class="year">2003 - 2018</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="icon">🥩</div>
+                            <div class="title">Certified Raw Dog Food Nutrition Specialist</div>
+                            <div class="year">DNM University 2020</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="icon">🌈</div>
+                            <div class="title">Colour Energy Healing Level 3</div>
+                            <div class="year">2021</div>
+                        </div>
+                        <div class="credential-item">
+                            <div class="icon">💫</div>
+                            <div class="title">Inner Child Healer Practitioner</div>
+                            <div class="year">2025</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <h3>Certified Professional Dog Trainer</h3>
-                    <p>With over 10 years of experience in dog training, I specialize in positive reinforcement techniques that build trust and create lasting behavioral changes.</p>
-                    <p>I'm certified by [Your Certifications] and have helped hundreds of dogs and their owners achieve their training goals.</p>
-                    <p>My approach focuses on understanding each dog's unique personality and creating customized training plans that work for both the dog and the family.</p>
+
+                <!-- Media Features -->
+                <div class="media-features">
+                    <h3>Featured In</h3>
+                    <div class="media-list">
+                        <div class="media-item">China Press 2018</div>
+                        <div class="media-item">Pet Magz 2018</div>
+                        <div class="media-item">The Star 2023</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
+    <!-- Section 3: My Services -->
+    <section id="services" class="services-section">
+        <h2 class="section-title">Services</h2>
         <div class="container">
-            <h2 class="section-title">Training Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🎓</div>
-                    <h3>Puppy Training</h3>
-                    <p>Start your puppy off right with foundational training in socialization, basic commands, and house training.</p>
+                    <h3>Professional Dog Training</h3>
+                    <div class="service-divider"></div>
+                    <p>Expert obedience training using proven methods from my experience as a USA North State Certified Police Canine Instructor.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🐕</div>
-                    <h3>Obedience Training</h3>
-                    <p>Master essential commands like sit, stay, come, and heel. Perfect for dogs of all ages.</p>
+                    <h3>Puppy Development</h3>
+                    <div class="service-divider"></div>
+                    <p>Complete puppy training program covering socialization, basic commands, and behavioral foundations for a well-adjusted adult dog.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🏠</div>
-                    <h3>Behavioral Issues</h3>
-                    <p>Address problems like excessive barking, jumping, separation anxiety, and aggression.</p>
+                    <h3>Show Dog Handling</h3>
+                    <div class="service-divider"></div>
+                    <p>Professional show handling and preparation with over 15 years of MKA Dog Show experience (2003-2018).</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🚶</div>
-                    <h3>Leash Training</h3>
-                    <p>Learn to walk calmly on a leash without pulling, lunging, or reactivity.</p>
+                    <h3>Raw Food Nutrition Consultation</h3>
+                    <div class="service-divider"></div>
+                    <p>Expert guidance on raw dog food nutrition. Certified specialist from DNM University helping you optimize your dog's diet.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">⭐</div>
-                    <h3>Advanced Training</h3>
-                    <p>Take your dog's skills to the next level with off-leash training and specialized commands.</p>
+                    <h3>Holistic Wellness Energy Healing</h3>
+                    <div class="service-divider"></div>
+                    <p>Unique approach combining Colour Energy Healing Level 3 and Inner Child Healing to address behavioral and emotional issues.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">👨‍👩‍👧‍👦</div>
-                    <h3>Private Sessions</h3>
-                    <p>One-on-one training tailored to your dog's specific needs in the comfort of your home.</p>
+                    <h3>Behavior Modification</h3>
+                    <div class="service-divider"></div>
+                    <p>Address aggression, anxiety, and problem behaviors using a combination of professional training and holistic healing methods.</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="portfolio">
+    <!-- Section 4: Client Reviews -->
+    <section id="reviews" class="reviews-section">
         <div class="container">
-            <h2 class="section-title">Success Stories</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image">Before/After Photo 1</div>
-                    <div class="portfolio-info">
-                        <h3>Max - German Shepherd</h3>
-                        <p>Transformed from reactive and aggressive to calm and obedient in 8 weeks.</p>
+            <h2 class="section-title">Client Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-photo">
+                        <img src="./images/bailey.jpeg" alt="David Wong">
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">Before/After Photo 2</div>
-                    <div class="portfolio-info">
-                        <h3>Bella - Golden Retriever</h3>
-                        <p>Mastered off-leash recall and advanced obedience commands.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">Before/After Photo 3</div>
-                    <div class="portfolio-info">
-                        <h3>Charlie - Mixed Breed</h3>
-                        <p>Overcame severe separation anxiety and destructive behaviors.</p>
+                    <div class="review-content">
+                        <p class="review-text">"Look at this cutie pie. Can you even tell that he is aggressive towards dogs?<br /><br/>
+                        Bailey, was adopted by us after being dumped several times by previous adopters because he was aggressive towards dogs. Being a pure golden retriever, he is suppose to be loving and caring towards dogs.
+Unfortunately, this does not apply to Bailey. He has forgotten his root. In fact he acts as if he is a hunter. To be exact, killer...He wants to kill every dogs and cats that he sees. Especially when we decided to move my grandma and her baby poodle in with us. We started to reach out to trainers and even animal communicator. We started to understand his behaviour and try really hard to educate him how should a golden behave. Yes, we needed to teach him to be a golden. We are really glad to meet his trainers - Terrence from @inspiredogacademy in helping us to get Bailey back. To bring back our good and obedient Golden Retriever. To let us understand better on Bailey. We, as his owners, always get questions like: is it hard to handle this? Yes, it takes time and effort but this does not give you an excuse to abandon him."</p>
+                        <div class="review-author">
+                            <span>Wendy</span>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 class="section-title">What Clients Say</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Amazing results! Our dog went from pulling on walks to walking perfectly beside us. Couldn't be happier with the training."</p>
-                    <p class="testimonial-author">- Sarah Johnson</p>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Professional, patient, and incredibly knowledgeable. The training techniques really work and are easy to maintain at home."</p>
-                    <p class="testimonial-author">- Mike Chen</p>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"We were struggling with our puppy's behavior until we started training sessions. Now he's a well-behaved member of our family!"</p>
-                    <p class="testimonial-author">- Emily Rodriguez</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p>Ready to start training? Contact me today to schedule a consultation!</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-item-icon">📧</span>
-                        <span>email@example.com</span>
-                    </div>
+            <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem;">
+                Ready to start training? Let's connect!
+            </p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-label">Email</div>
+                    <a href="mailto:inspiredogacademy@gmail.com" class="contact-value">inspiredogacademy@gmail.com</a>
                 </div>
+                <!-- <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <div class="contact-label">WhatsApp</div>
+                    <a href="https://wa.me/60123456789" class="contact-value" target="_blank">+60 12-345 6789</a>
+                </div> -->
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Professional Dog Training. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Terrence Tan. All rights reserved.</p>
     </footer>
-
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

@@ -49,6 +49,24 @@ nav {
     opacity: 0.8;
 }
 
+.lang-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.lang-btn:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+}
+
+
 section#home {
     display: flex;
     height: 100vh; /* Full viewport height */

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dog Trainer in Puchong, Malaysia</title>
+    <title>Terrence - Dog Trainer in Puchong | 训犬师</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,11 +11,12 @@
         <nav>
             <div class="logo"></div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#reviews">Our Clients</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" data-en="Home" data-zh="主页">Home</a></li>
+                <li><a href="#about" data-en="About" data-zh="关于">About</a></li>
+                <li><a href="#services" data-en="Services" data-zh="服务">Services</a></li>
+                <li><a href="#reviews" data-en="Our Clients" data-zh="客户评价">Our Clients</a></li>
+                <li><a href="#contact" data-en="Contact" data-zh="联系">Contact</a></li>
+                <li><button id="langToggle" class="lang-btn">中文</button></li>
             </ul>
         </nav>
     </header>
@@ -25,13 +26,13 @@
         </div>
         <div class="right">
             <div class="top">
-                <h2>Hi, I'm Terrence,</h2>
-                <h2>an expert dog trainer &</h2>
-                <h2>holistic wellness specialist.</h2>
-                <h2>Puchong, Malaysia.</h2>
+                <h2 data-en="Hi, I'm Terrence," data-zh="你好，我是Terrence，">Hi, I'm Terrence,</h2>
+                <h2 data-en="an expert dog trainer &" data-zh="专业训犬师 &">an expert dog trainer &</h2>
+                <h2 data-en="holistic wellness specialist." data-zh="整体疗法疗愈师。">holistic wellness specialist.</h2>
+                <h2 data-en="Puchong, Malaysia." data-zh="马来西亚蒲种。">Puchong, Malaysia.</h2>
             </div>
             <div class="bottom">
-                <a href="#contact" class="contact-btn">
+                <a href="https://linktr.ee/inspiredogacademy" target="_blank" class="contact-btn" data-en="Contact Me" data-zh="联系我">
                     Contact Me
                 </a>
             </div>
@@ -39,91 +40,77 @@
     </section>
     <section id="about" class="about-section">
         <div class="container">
-            <h2 class="section-title">A Little Bit About Me</h2>
+            <h2 class="section-title" data-en="About The Instructor" data-zh="关于训犬师">A Little Bit About Me</h2>
             <div class="about-content">
-                <p>I've been working with dogs professionally for more than 15 years, helping hundreds of owners build stronger relationships with their furry companions. My passion for dogs started at a young age, and I've dedicated my career to understanding canine behavior, training, and holistic wellness.</p>
-                
-                <p>I believe every dog has the potential to be well-behaved and happy. My approach combines professional training expertise with holistic wellness, focusing on positive reinforcement, nutrition, and understanding each dog's unique personality and energy.</p>
+                <li data-en="USA North State Certified Police Canine Instructor (2014)" data-zh="美国北州认证警犬训练师 (2014)">USA North State Certified Police Canine Instructor (2014)</li>
+                <li data-en="Participate in MKA Dog show handling since 2003 - 2018" data-zh="2003年-2018年参与MKA犬展">Participate in MKA Dog show handling since 2003 - 2018</li>
+                <li data-en="Certified Raw Dog Food Nutrition Specialist, DNM University (2020)" data-zh="DNM 大学认证生狗粮营养专家 (2020)">Certified Raw Dog Food Nutrition Specialist, DNM University (2020)</li>
+                <li data-en="Colour Energy Healing Practitioner Level 3 (2021)" data-zh="色彩能量治疗师三级（2021）">Colour Energy Healing Practitioner Level 3 (2021)</li>
+                <li data-en="Inner Child Healer Practitioner (2025)" data-zh="内在小孩治疗师（2025）"">Inner Child Healer Practitioner (2025)</li><br />
 
-                <!-- Credentials Section -->
-                <div class="credentials-section">
-                    <h3>Certifications & Experience</h3>
-                    <div class="credentials-grid">
-                        <div class="credential-item">
-                            <div class="icon">🎖️</div>
-                            <div class="title">USA North State Certified Police Canine Instructor</div>
-                            <div class="year">2014</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="icon">🏆</div>
-                            <div class="title">MKA Dog Show Handling Experience</div>
-                            <div class="year">2003 - 2018</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="icon">🥩</div>
-                            <div class="title">Certified Raw Dog Food Nutrition Specialist</div>
-                            <div class="year">DNM University 2020</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="icon">🌈</div>
-                            <div class="title">Colour Energy Healing Level 3</div>
-                            <div class="year">2021</div>
-                        </div>
-                        <div class="credential-item">
-                            <div class="icon">💫</div>
-                            <div class="title">Inner Child Healer Practitioner</div>
-                            <div class="year">2025</div>
-                        </div>
-                    </div>
-                </div>
+                <p data-en="With over 11 years of professional experience, Terrence Tan has been featured in China Press (2018), Pet Magz (2018), and The Star (2023)." data-zh="Terrence Tan 拥有超过 11 年的专业经验，曾在 China Press (2018)、Pet Magz (2018) 和 The Star (2023) 等媒体进行专题报道。">With over 11 years of professional experience, Terrence Tan has been featured in China Press (2018), Pet Magz (2018), and The Star (2023).</p>
 
-                <!-- Media Features -->
-                <div class="media-features">
-                    <h3>Featured In</h3>
-                    <div class="media-list">
-                        <div class="media-item">China Press 2018</div>
-                        <div class="media-item">Pet Magz 2018</div>
-                        <div class="media-item">The Star 2023</div>
-                    </div>
-                </div>
+                <p data-en="Terrence specializes in understanding canine body language and emotional connection, helping dog owners transform training into a fun and enjoyable process rather than a strict routine. His calm energy naturally helps dogs feel relaxed and secure." data-zh="Terrence擅长理解犬类的肢体语言和情感联系，帮助狗主人将训练变成一个有趣和愉快的过程，而不是严格的例行公事。他平静的能量自然可以帮助狗感到放松和安全。">Terrence specializes in understanding canine body language and emotional connection, helping dog owners transform training into a fun and enjoyable process rather than a strict routine. His calm energy naturally helps dogs feel relaxed and secure.</p>
+
+                <p data-en="One notable success story involved a Golden Retriever with severe dog aggression, previously abandoned by several owners. Through Terrence's guidance, the dog has learned to remain calm, walk under control, and even live peacefully with other dogs." data-zh="一个著名的成功故事涉及一只具有严重攻击性的金毛猎犬，此前曾被几位主人遗弃。在Terrence的指导下，这只狗学会了保持冷静、有控制地行走，甚至与其他狗和平相处。">One notable success story involved a Golden Retriever with severe dog aggression, previously abandoned by several owners. Through Terrence's guidance, the dog has learned to remain calm, walk under control, and even live peacefully with other dogs.</p>
+
+                <p data-en="His approach bridges canine behavior, energy balance, and human emotional awareness — creating harmony between humans and dogs." data-zh="他的方法将犬类行为、能量平衡和人类情感意识联系起来，创造人与狗之间的和谐。">His approach bridges canine behavior, energy balance, and human emotional awareness — creating harmony between humans and dogs.</p>
             </div>
         </div>
     </section>
 
     <!-- Section 3: My Services -->
     <section id="services" class="services-section">
-        <h2 class="section-title">Services</h2>
+        <h2 class="section-title" data-en="Services" data-zh="服务项目">Services</h2>
         <div class="container">
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Professional Dog Training</h3>
+                    <h3 data-en="Professional Dog Training" data-zh="专业训犬">Professional Dog Training</h3>
                     <div class="service-divider"></div>
-                    <p>Expert obedience training using proven methods from my experience as a USA North State Certified Police Canine Instructor.</p>
+                    <p data-en="Expert obedience training using proven methods from my experience as a USA North State Certified Police Canine Instructor."
+                       data-zh="运用美国北州认证警犬训练师的专业方法进行服从性训练。">
+                       Expert obedience training using proven methods from my experience as a USA North State Certified Police Canine Instructor.
+                    </p>
                 </div>
                 <div class="service-card">
-                    <h3>Puppy Development</h3>
+                    <h3 data-en="Puppy Development" data-zh="幼犬培育">Puppy Development</h3>
                     <div class="service-divider"></div>
-                    <p>Complete puppy training program covering socialization, basic commands, and behavioral foundations for a well-adjusted adult dog.</p>
+                    <p data-en="Complete puppy training program covering socialization, basic commands, and behavioral foundations for a well-adjusted adult dog."
+                       data-zh="全面的幼犬训练计划，包括社交化、基本指令和行为基础，培养健康成犬。">
+                       Complete puppy training program covering socialization, basic commands, and behavioral foundations for a well-adjusted adult dog.
+                    </p>
                 </div>
                 <div class="service-card">
-                    <h3>Show Dog Handling</h3>
+                    <h3 data-en="Show Dog Handling" data-zh="犬展处理">Show Dog Handling</h3>
                     <div class="service-divider"></div>
-                    <p>Professional show handling and preparation with over 15 years of MKA Dog Show experience (2003-2018).</p>
+                    <p data-en="Professional show handling and preparation with over 15 years of MKA Dog Show experience (2003-2018)."
+                       data-zh="拥有超过15年MKA犬展经验（2003-2018）的专业犬展处理和准备。">
+                       Professional show handling and preparation with over 15 years of MKA Dog Show experience (2003-2018).
+                    </p>
                 </div>
                 <div class="service-card">
-                    <h3>Raw Food Nutrition Consultation</h3>
+                    <h3 data-en="Raw Food Nutrition Consultation" data-zh="生食营养咨询">Raw Food Nutrition Consultation</h3>
                     <div class="service-divider"></div>
-                    <p>Expert guidance on raw dog food nutrition. Certified specialist from DNM University helping you optimize your dog's diet.</p>
+                    <p data-en="Expert guidance on raw dog food nutrition. Certified specialist from DNM University helping you optimize your dog's diet."
+                       data-zh="生食营养专家指导。DNM大学认证专家帮助您优化狗狗的饮食。">
+                       Expert guidance on raw dog food nutrition. Certified specialist from DNM University helping you optimize your dog's diet.
+                    </p>
                 </div>
                 <div class="service-card">
-                    <h3>Holistic Wellness Energy Healing</h3>
+                    <h3 data-en="Holistic Wellness Energy Healing" data-zh="整体能量疗愈">Holistic Wellness Energy Healing</h3>
                     <div class="service-divider"></div>
-                    <p>Unique approach combining Colour Energy Healing Level 3 and Inner Child Healing to address behavioral and emotional issues.</p>
+                    <p data-en="Unique approach combining Colour Energy Healing Level 3 and Inner Child Healing to address behavioral and emotional issues."
+                       data-zh="结合色彩能量疗愈三级和内在小孩疗愈的独特方法，解决行为和情绪问题。">
+                       Unique approach combining Colour Energy Healing Level 3 and Inner Child Healing to address behavioral and emotional issues.
+                    </p>
                 </div>
                 <div class="service-card">
-                    <h3>Behavior Modification</h3>
+                    <h3 data-en="Behavior Modification" data-zh="行为矫正">Behavior Modification</h3>
                     <div class="service-divider"></div>
-                    <p>Address aggression, anxiety, and problem behaviors using a combination of professional training and holistic healing methods.</p>
+                    <p data-en="Address aggression, anxiety, and problem behaviors using a combination of professional training and holistic healing methods."
+                       data-zh="结合专业训练和整体疗愈方法，解决攻击性、焦虑和问题行为。">
+                       Address aggression, anxiety, and problem behaviors using a combination of professional training and holistic healing methods.
+                    </p>
                 </div>
             </div>
         </div>
@@ -131,19 +118,38 @@
     <!-- Section 4: Client Reviews -->
     <section id="reviews" class="reviews-section">
         <div class="container">
-            <h2 class="section-title">Client Reviews</h2>
+            <h2 class="section-title" data-en="Client Reviews" data-zh="客户评价">Client Reviews</h2>
             <div class="reviews-grid">
                 <div class="review-card">
                     <div class="review-photo">
-                        <img src="./images/bailey.jpeg" alt="David Wong">
+                        <img src="./images/bailey.jpeg" alt="bailey">
                     </div>
                     <div class="review-content">
-                        <p class="review-text">"Look at this cutie pie. Can you even tell that he is aggressive towards dogs?<br /><br/>
-                        Bailey, was adopted by us after being dumped several times by previous adopters because he was aggressive towards dogs. Being a pure golden retriever, he is suppose to be loving and caring towards dogs.
-Unfortunately, this does not apply to Bailey. He has forgotten his root. In fact he acts as if he is a hunter. To be exact, killer...He wants to kill every dogs and cats that he sees. Especially when we decided to move my grandma and her baby poodle in with us. We started to reach out to trainers and even animal communicator. We started to understand his behaviour and try really hard to educate him how should a golden behave. Yes, we needed to teach him to be a golden. We are really glad to meet his trainers - Terrence from @inspiredogacademy in helping us to get Bailey back. To bring back our good and obedient Golden Retriever. To let us understand better on Bailey. We, as his owners, always get questions like: is it hard to handle this? Yes, it takes time and effort but this does not give you an excuse to abandon him."</p>
+                        <p class="review-text" data-en="Look at this cutie pie. Can you even tell that he is aggressive towards dogs?
+
+Bailey, was adopted by us after being dumped several times by previous adopters because he was aggressive towards dogs. Being a pure golden retriever, he is suppose to be loving and caring towards dogs. Unfortunately, this does not apply to Bailey. He has forgotten his root. In fact he acts as if he is a hunter. To be exact, killer...He wants to kill every dogs and cats that he sees. Especially when we decided to move my grandma and her baby poodle in with us. We started to reach out to trainers and even animal communicator. We started to understand his behaviour and try really hard to educate him how should a golden behave. Yes, we needed to teach him to be a golden. We are really glad to meet his trainers - Terrence from @inspiredogacademy in helping us to get Bailey back. To bring back our good and obedient Golden Retriever. To let us understand better on Bailey. We, as his owners, always get questions like: is it hard to handle this? Yes, it takes time and effort but this does not give you an excuse to abandon him."
+                               data-zh="看看这个小可爱。你能看出它对其他狗有攻击性吗？
+
+Bailey是我们领养的，之前被好几个领养者遗弃，因为他对其他狗有攻击性。作为纯种金毛，他本应该对狗充满爱心和关怀。不幸的是，这不适用于Bailey。他忘记了自己的根。事实上，他表现得像个猎人。准确地说，杀手...他想杀死他看到的每只狗和猫。特别是当我们决定让奶奶和她的小贵宾犬搬进来住时。我们开始联系训练师，甚至是动物沟通师。我们开始理解他的行为，并努力教导他金毛应该如何表现。是的，我们需要教他成为一只金毛。我们很高兴遇到他的训练师 - @inspiredogacademy 的Terrence，帮助我们找回Bailey。带回我们乖巧听话的金毛猎犬。让我们更好地了解Bailey。作为他的主人，我们总是被问到：处理这个难吗？是的，这需要时间和精力，但这不能成为你遗弃他的借口。">
+                               Look at this cutie pie. Can you even tell that he is aggressive towards dogs?<br /><br/>
+Bailey, was adopted by us after being dumped several times by previous adopters because he was aggressive towards dogs. Being a pure golden retriever, he is suppose to be loving and caring towards dogs. Unfortunately, this does not apply to Bailey. He has forgotten his root. In fact he acts as if he is a hunter. To be exact, killer...He wants to kill every dogs and cats that he sees. Especially when we decided to move my grandma and her baby poodle in with us. We started to reach out to trainers and even animal communicator. We started to understand his behaviour and try really hard to educate him how should a golden behave. Yes, we needed to teach him to be a golden. We are really glad to meet his trainers - Terrence from @inspiredogacademy in helping us to get Bailey back. To bring back our good and obedient Golden Retriever. To let us understand better on Bailey. We, as his owners, always get questions like: is it hard to handle this? Yes, it takes time and effort but this does not give you an excuse to abandon him.
+                        </p>
                         <div class="review-author">
-                            <span>Wendy</span>
-                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span>- Wendy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-photo">
+                        <img src="./images/marley.jpeg" alt="marley">
+                    </div>
+                    <div class="review-content">
+                        <p class="review-text" 
+                        data-en="All the credit goes to you terrence esp on how you have come into our lives at the most needed time cause we were all not so knowledgeable  on how to bring him up at the beginning but the again God showed us some light through you n its truly priceless, THANK YOU"
+                        data-zh="所有的功劳都归功于你, Terrence，尤其是你如何在最需要的时候进入我们的生活，因为我们一开始都不太了解如何抚养他，但上帝再次通过你向我们展示了一些光明，这真的是无价的，谢谢你"
+                        >"All the credit goes to you terrence esp on how you have come into our lives at the most needed time cause we were all not so knowledgeable  on how to bring him up at the beginning but the again God showed us some light through you n its truly priceless, THANK YOU"</p>
+                        <div class="review-author">
+                            <span>- Ramesh</span>
                         </div>
                     </div>
                 </div>
@@ -154,30 +160,86 @@ Unfortunately, this does not apply to Bailey. He has forgotten his root. In fact
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem;">
+            <h2 class="section-title" data-en="Get In Touch" data-zh="联系我们">Get In Touch</h2>
+            <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem;" data-en="Ready to start training? Let's connect!" data-zh="准备开始训练了吗？让我们联系吧！">
                 Ready to start training? Let's connect!
             </p>
             <div class="contact-info">
                 <div class="contact-item">
                     <div class="contact-icon">📧</div>
-                    <div class="contact-label">Email</div>
+                    <div class="contact-label" data-en="Email" data-zh="邮箱">Email</div>
                     <a href="mailto:inspiredogacademy@gmail.com" class="contact-value">inspiredogacademy@gmail.com</a>
                 </div>
-                <!-- <div class="contact-item">
+                <div class="contact-item">
                     <div class="contact-icon">💬</div>
                     <div class="contact-label">WhatsApp</div>
-                    <a href="https://wa.me/60123456789" class="contact-value" target="_blank">+60 12-345 6789</a>
-                </div> -->
+                    <a id="whatsapp" class="contact-value" target="_blank">Click to Chat</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">⊕</div>
+                    <div class="contact-label">Others</div>
+                     <a href="https://linktr.ee/inspiredogacademy" target="_blank" class="contact-value">Link</a>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; <span id="year"></span> Terrence Tan. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> <span data-en="Terrence Tan. All rights reserved." data-zh="Terrence Tan. 版权所有。">Terrence Tan. All rights reserved.</span></p>
     </footer>
+
     <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const phone = '601156919584';
+    const whatsappMessages = {
+        en: "Hi, I'm interested in your dog training service",
+        zh: "你好，我对您的训犬服务感兴趣"
+    };
+
+    function updateWhatsAppLink() {
+        const message = encodeURIComponent(whatsappMessages[currentLang]);
+        const url = `https://wa.me/${phone}?text=${message}`;
+        const whatsappBtn = document.getElementById('whatsapp');
+        if (whatsappBtn) {
+            whatsappBtn.setAttribute('href', url);
+        }
+    }
+
+    // Language switcher
+    let currentLang = 'en';
+    const langToggle = document.getElementById('langToggle');
+
+    function switchLanguage() {
+        currentLang = currentLang === 'en' ? 'zh' : 'en';
+        langToggle.textContent = currentLang === 'en' ? '中文' : 'English';
+
+        // Update all elements with translations
+        document.querySelectorAll('[data-en]').forEach(element => {
+            const text = currentLang === 'en' ? element.getAttribute('data-en') : element.getAttribute('data-zh');
+            if (element.tagName === 'A' || element.tagName === 'BUTTON') {
+                element.textContent = text;
+            } else {
+                element.textContent = text;
+            }
+        });
+
+        updateWhatsAppLink();
+
+        // Save preference
+        localStorage.setItem('preferredLanguage', currentLang);
+    }
+
+    // Load saved language preference
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang && savedLang !== currentLang) {
+        switchLanguage();
+    }
+
+    // Initialize WhatsApp link
+    updateWhatsAppLink();
+
+    langToggle.addEventListener('click', switchLanguage);
+</script>
 </body>
 </html>

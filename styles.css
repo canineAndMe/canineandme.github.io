@@ -270,7 +270,7 @@ section#home {
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     transition: transform 0.3s, box-shadow 0.3s;
     border: 2px solid #f0f0f0;
-    height: 20rem;
+    height: 25rem;
 }
 
 .service-card:hover {
